@@ -1,0 +1,86 @@
+.lord{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(-15deg,rgba(233, 233, 233, 0.911),RGB(143,101,106) );
+    #popcorn{
+        position: absolute;
+        top: 150%;
+        left: 0%;
+        height: 60rem;
+        transform: rotate(-10deg) translateX(-10%);
+        // color: whitesmoke;
+        fill: #111;
+        opacity: .4;
+        mix-blend-mode: overlay;
+    }
+    #film{
+        position: absolute;
+        top: 0%;
+        right: -20%;
+        height: 60rem;
+        transform: rotate(50deg) translateX(-10%);
+        // color: whitesmoke;
+        fill: #111;
+        opacity: .4;
+        mix-blend-mode: overlay;
+    }
+}
+
+.more-works-container{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    // background: linear-gradient(-15deg,rgba(233, 233, 233, 0.911),RGB(143,101,106) );
+
+}
+    .more-title{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        // background: linear-gradient( 190deg,rgb(254,251,255) 10% , rgb(214, 214, 214));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+    }
+    #more-works{
+        font-size: 12rem;
+        font-family: 'rische-regular';
+        line-height: 12rem;
+        // text-align: center;
+        padding: 2rem 0rem 12rem 0rem;
+        font-style: normal;
+        align-self: center;
+        color: rgb(44, 44, 44);
+        letter-spacing: 3rem;
+        width: 100%;
+        flex-basis: 0;
+        text-decoration: none;
+        position: unset;
+        text-shadow: 1px 2px 0px rgba(184, 184, 184, 0.836),
+        0px 4px 1px rgb(0, 0, 0);
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: .5;
+            width: 100vw;
+            height: 50%;
+            z-index: -1;
+            // background: linear-gradient(0deg , rgb(255, 250,252) 10%,rgb(0, 0, 0) 200%);
+        }
+        span{
+            position: absolute;
+            top: 48.5%;
+            left: 36.75%;
+            color: rgb(244, 244, 244);
+            font-family: 'rische-light';
+        }
+    }

@@ -1,0 +1,243 @@
+// Backgrounds
+.blessed-trailer-bg{
+    &::before{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        content: "";
+        opacity: 1;
+        z-index: 1;
+        pointer-events: none;
+        background: url(/pics/backgrounds/blessed-trailer.jpg);
+        background-size: cover;
+        background-position: top;
+        }
+}
+.deserter-trailer-bg{
+    position: relative;
+    &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+    background: url(/pics/backgrounds/arika-trailer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+}
+.noise-trailer-bg{
+    position: relative;
+    &::before{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: 98vh;
+    content: "";
+    opacity: 0.03;
+    z-index: 1;
+    pointer-events: none;
+    background: url(/pics/noisegifs/noisegif-tv.gif);
+    }
+}
+// //
+.trailer-section{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 5rem;
+    @include flex(center,center,column);
+    flex-wrap: wrap;
+}
+.text-wrapper{
+    // @include flex(flex-end,center,row);
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    // mix-blend-mode:luminosity;
+    h3{
+        position: absolute;
+        top: 0%;
+        right: 0;
+        font-family: "HEB";
+        font-size: 15rem;
+        text-align: start; 
+        letter-spacing: 0rem;
+        text-transform: lowercase;
+        color: #111;
+        opacity: 0.9;
+        text-shadow: -2px 2px 1px rgba(221, 221, 221, 0.378)  }
+
+    p{
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        color: rgba(255, 255, 255, 0.856);
+        background: rgba(17, 17, 17, 0.795);
+        display: inline-block;
+        padding: .5rem 1rem;
+        opacity: .9;
+        // border: 2px dotted rgba(255, 255, 255, 0.166);
+        font-family: 'Rische-light';
+        // background: #111;
+        letter-spacing: 0.25rem;
+        // text-shadow: 1px 1px 1px rgba(110, 110, 110, 0.932);
+    }
+}
+.deserter-header{
+    z-index: 99;
+    h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Rische-regular';
+        font-size: 13rem;
+        text-align: start; 
+        letter-spacing: 0rem;
+        text-transform: lowercase;
+        color: #111;
+        opacity: .9;
+        // text-shadow: -3px 3px 1px rgba(221, 221, 221, 0.278);
+        // text-shadow: 5px 0px 1px rgb(255, 255, 255);
+    }
+}
+.trailer-box{
+    // margin: 5rem;
+    iframe{
+    border-radius: .75rem;
+    width: 50vw;
+    box-shadow: rgba(34, 34, 34, 0.57) 10px 0px 10rem,
+    rgba(0, 0, 0, 0.426) 0px 0px 10rem;
+    }
+    z-index: 5;
+}
+
+// Discription Page
+// backgrounds
+.blessed-description-bg{
+    &::before{
+        position: absolute;
+        top: 102%;
+        left: 0%;
+        width: 80%;
+        min-height: 100%;
+        content: "";
+        opacity: 1;
+        z-index: 1;
+        pointer-events: none;
+        background-image: url(/pics/backgrounds/blessed-description.jpg);
+        background-size: cover;
+        background-position: top;
+        mask-image: linear-gradient(to left, transparent 10%, black 20%);
+    }
+}
+.deserter-description-bg{
+    &::before{
+    position: absolute;
+    top: 102%;
+    left: 0%;
+    width: 80%;
+    min-height: 100%;
+    content: "";
+    opacity: 1;
+
+    z-index: 1;
+    pointer-events: none;
+    background-image: url(/pics/backgrounds/arika-description1.jpg);
+    background-size: cover;
+    background-position: top;
+    mask-image: linear-gradient(to left, transparent 10%, black 20%);
+    }
+}
+// CONTAINER=box
+ .description-container{
+    background: #111;
+    z-index: 3;
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 5rem;
+    color: rgba(240, 240, 240, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+// TEXT BOXES
+
+.description-text,
+.description-text-heb{
+    z-index: 3;
+    width: 30%;
+}
+.description-text{
+    text-align: start;
+}
+.description-text h3{
+        font-family: 'Rische-medium';
+        letter-spacing: -.3rem;
+        font-size: 6rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+    }
+    .text-box{
+        padding: 1rem 5rem;
+        p{
+            font-size: 1.15rem;
+            padding: 0rem 10rem 0rem 0rem;
+            font-family: 'Rische-semibold';
+            letter-spacing: .1rem;
+            line-height: 1.1rem;
+            // text-shadow: 1px 1px 0px black;
+        }
+    }
+    .description-text h2{
+        font-size: 1.5rem;
+        font-family: 'Rische-medium';
+        letter-spacing: 0.1rem;
+        line-height: .1rem;
+        padding-left: 5rem;
+}
+
+
+
+.description-text-heb{
+        font-family: "HEB";
+        text-align: end;
+        // padding: 1rem;
+}
+    .description-text-heb h3{
+        letter-spacing: -.1rem;
+        font-size: 10rem;
+        padding-right: 5rem;
+        }
+
+            .text-box-heb{
+        padding: 1rem 5rem;
+        position: relative;
+        }
+        p{
+            font-size: 1.7rem;
+            padding: 0rem 0rem 0rem 10rem;
+            letter-spacing: 0.05rem;
+            // text-shadow: 1px 1px 0px black;
+            line-height: 1.7rem;
+            // color: #111;
+            // background: whitesmoke;
+            width: fit-content;
+        }
+        .description-text-heb h2{
+            font-size: 1.8rem;
+            padding-bottom: 1rem;
+            padding-right: 5rem;
+            text-shadow: black 1px 1px 0px;
+            letter-spacing: .2rem;
+            line-height: 2rem;
+    }
