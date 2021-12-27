@@ -921,7 +921,7 @@ p {
 
 .fa-arrow-right {
   font-size: 1.6rem;
-  color: #969696;
+  color: #111;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
   -webkit-transition-property: color, -webkit-transform;
