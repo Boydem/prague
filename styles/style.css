@@ -643,11 +643,9 @@ p {
 
 .lord #popcorn {
   position: absolute;
-  top: 150%;
+  top: 160%;
   left: 0%;
-  height: 60rem;
-  -webkit-transform: rotate(-10deg) translateX(-10%);
-          transform: rotate(-10deg) translateX(-10%);
+  height: 45rem;
   fill: #111;
   opacity: .4;
   mix-blend-mode: overlay;
