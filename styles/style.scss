@@ -1,8 +1,3 @@
-
-
-
-
-
 $header1: 2.5rem;
 $header2: 5rem;
 $header3: 5rem;
@@ -13,28 +8,33 @@ $sub-logo: 1.4rem;
 $page-title: 2rem;
 $film-name: 4rem;
 $text: 1.8rem;
-*,*::before,*::after{
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 80%;
 }
-a, ul, li, ol{
+
+a, ul, li, ol {
   text-decoration: none;
   list-style-type: none;
   cursor: none;
 }
-body{
+
+body {
   cursor: none;
   background: rgb(250, 250, 250);
   width: 100vw;
   overflow-x: hidden;
 }
+
 h1 {
   font-size: $header1;
 }
+
 li,
 button,
 label,
@@ -43,53 +43,63 @@ a,
 p {
   font-size: $text;
 }
+
 h2 {
   font-size: $header2;
 }
+
 h3 {
   font-size: $header3;
 }
+
 h4,
 h5 {
   font-size: $header4;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   cursor: none;
 }
 
 
-
 @import url("//hello.myfonts.net/count/412126");
-  
+
 @font-face {
   font-family: "Rische-Medium";
   src: url('/webFonts/RischeMedium/font.woff2') format('woff2'), url('webFonts/RischeMedium/font.woff') format('woff');
 }
+
 @font-face {
   font-family: "Rische-Bold";
   src: url('/webFonts/RischeBold/font.woff2') format('woff2'), url('webFonts/RischeBold/font.woff') format('woff');
 }
+
 @font-face {
   font-family: "Rische-Light";
   src: url('/webFonts/RischeLight/font.woff2') format('woff2'), url('webFonts/RischeLight/font.woff') format('woff');
 }
+
 @font-face {
   font-family: "Rische-Regular";
   src: url('/webFonts/RischeRegular/font.woff2') format('woff2'), url('webFonts/RischeRegular/font.woff') format('woff');
 }
+
 @font-face {
   font-family: "RischeVariable";
   src: url('/webFonts/RischeVariable/font.woff2') format('woff2'), url('webFonts/RischeVariable/font.woff') format('woff');
 }
+
 @font-face {
   font-family: "Rische-Semibold";
   src: url('/webFonts/RischeSemibold/font.woff2') format('woff2'), url('webFonts/RischeSemibold/font.woff') format('woff');
 }
-  @font-face {
+
+@font-face {
   font-family: "HEB";
   src: url('/fonts/webFonts/YiddishkeitAlefAlefAlef-Bold.woff') format('woff2'), url('webFonts/RischeSemibold/font.woff') format('woff');
 }
@@ -101,55 +111,58 @@ a {
   align-items: $align;
   flex-direction: $direction;
 }
+
 // importing
 @import "intro";
-@import "shortfilms"; 
+@import "shortfilms";
 @import "moreworks";
 @import "more";
 @import "aboutme";
 
-@media screen and(max-width:1550px){
-  html{
+@media (max-width: 1550px) {
+  html {
     font-size: 60%;
   }
-  .hero{
+  .hero {
     overflow: hidden;
   }
-  .hero #logo{
+  .hero #logo {
     transform: translate(0%, 0%);
   }
-  .hero #sub-logo{
+  .hero #sub-logo {
     transform: translate(0%, 0%);
   }
-  
+
 }
-@media screen and(max-width:950px){
-  html{
+
+@media (max-width: 950px) {
+  html {
     font-size: 55%;
   }
-  
+
 }
-@media screen and(max-width:866px){
+
+@media (max-width: 866px) {
   // .main-head{
   //   width: 100%;
   // }
-  .main-head nav{
+  .main-head nav {
     height: fit-content;
     width: 100vw;
     padding: 0rem;
-    margin: auto; 
+    margin: auto;
   }
-  .nav-links{
+  .nav-links {
     display: block;
     padding: 1rem 0rem;
     margin: 0rem auto;
   }
-  .main-head nav a{
+  .main-head nav a {
     width: 100vw;
     margin: .6rem auto;
     padding: 0;
   }
-  .link-grow{
+  .link-grow {
     transform: scale(1.2);
     transform: translate(-50%, -50%);
   }
